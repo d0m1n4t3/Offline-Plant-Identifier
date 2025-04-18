@@ -1,121 +1,119 @@
-# EN:
-# 🌿 Offline Plant Identifier
+# Offline Plant Identifier / Çevrimdışı Bitki Tanımlayıcı
 
-Offline Plant Identifier is a mobile application that works entirely offline to identify plants using a built-in machine learning model. It analyzes photos taken from the camera or selected from the gallery and predicts the plant species using a TensorFlow Lite model.
+## 🇬🇧 English
+
+### 🌿 Overview
+Offline Plant Identifier is an Android app that identifies plants using a TensorFlow Lite model, working entirely offline. Capture or select photos to predict plant species with a simple, user-friendly interface.
+
+### 🚀 Features
+- 📷 Use camera or gallery to load images
+- 🤖 On-device plant classification with TensorFlow Lite
+- 📡 Fully offline operation
+- 🧠 Intuitive and clean interface
+
+### 📋 Requirements
+- **Android Studio**: Electric Eel or later
+- **Android SDK**: API 30+
+- **Device/Emulator**: Android 10 or higher
+
+### 🔧 Installation
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/d0m1n4t3/offline-plant-identifier.git
+   ```
+   Or download and extract the ZIP file.
+
+2. **Open in Android Studio**
+   - Launch Android Studio.
+   - Select **File > Open**.
+   - Choose the `OfflinePlantIdentifier` folder.
+
+3. **Verify Permissions**
+   - Confirm **Camera** and **Storage** permissions are set in `AndroidManifest.xml`.
+
+4. **Build the Project**
+   - Android Studio will download dependencies and build the project automatically.
+
+5. **Run the App**
+   - Click the **Run ▶️** button.
+   - Select a device or emulator.
+   - The app will launch and be ready.
+
+### 📸 Usage
+1. **Open the App**
+   - Start the app to see a simple interface for image selection.
+
+2. **Choose an Image**
+   - **Take Photo**: Capture a new image with the camera.
+   - **Select from Gallery**: Pick an existing image.
+
+3. **View Results**
+   - The app processes the image offline and displays the predicted plant name (if supported by the model).
+
+### 🧠 Model Details
+- The default model recognizes a limited set of plants.
+- Replace `plant_model.tflite` with a custom model for better accuracy.
+
+### ℹ️ Notes
+- Ensure your device/emulator meets the requirements.
+- Check the [TensorFlow Lite documentation](https://www.tensorflow.org/lite) for more details.
 
 ---
 
-## 🚀 Features
+## 🇹🇷 Türkçe
 
-- 📷 Load images from camera or gallery  
-- 🤖 On-device classification using TensorFlow Lite (TFLite)  
-- 📡 Works fully **offline**  
-- 🧠 Simple and user-friendly interface
+### 🌿 Genel Bakış
+Çevrimdışı Bitki Tanımlayıcı, TensorFlow Lite modeli kullanarak tamamen çevrimdışı bitki tanımlayan bir Android uygulamasıdır. Fotoğraf çekin veya galeri seçimi yapın, bitki türlerini basit bir arayüzle tahmin edin.
 
-An Android app that identifies plants offline using a TensorFlow Lite model.
+### 🚀 Özellikler
+- 📷 Kamera veya galeri ile görüntü yükleme
+- 🤖 TensorFlow Lite ile cihaz üzerinde sınıflandırma
+- 📡 Tamamen çevrimdışı çalışma
+- 🧠 Kullanıcı dostu ve sade arayüz
 
-## 🔧 Installation
-# 📦 Requirements
-Android Studio (Electric Eel or later recommended)
-
-Android SDK (API 30+)
-
-A physical device or emulator running Android 10+
-
-## ⚙️ Steps
-Clone the Repository
-Either download the ZIP or use Git:
-`git clone https://github.com/d0m1n4t3/offline-plant-identifier.git`
-
-Open in Android Studio
-
-Open Android Studio
-
-Go to File > Open
-
-Select the OfflinePlantIdentifier project folder
-
-Allow Permissions
-Make sure the app has Camera and Storage permissions declared in AndroidManifest.xml.
-
-Build the Project
-Android Studio will automatically download dependencies and build the project.
-
-Run the App
-
-Click on the green Run ▶️ button
-
-Choose your device or emulator
-
-The app will launch and be ready to use
-
-## 🚀 Usage
-Launch the App
-When the app starts, you’ll see a simple interface to either take a photo or select one from the gallery.
-
-Choose an Image
-
-Click “Take Photo” to open the camera
-
-Or click “Choose from Gallery” to select an existing image
-
-View Result
-The app will process the image offline using a TensorFlow Lite model and display the predicted plant name (if supported by the model).
-
-Model Info
-
-The default model can recognize a limited number of plant types.
-
-For better accuracy, you can replace the plant_model.tflite file with a custom-trained model.
-
-# TR:
-# 🌿 Çevrimdışı Bitki Tanımlayıcı
-
-Bu uygulama, TensorFlow Lite modeli kullanarak çevrimdışı bitki tanımlama yapar. Aşağıda kurulum ve kullanım talimatları yer almaktadır.
-
-## 📦 Gereksinimler
-- **Android Studio**: Electric Eel veya sonrası önerilir
+### 📋 Gereksinimler
+- **Android Studio**: Electric Eel veya sonrası
 - **Android SDK**: API 30+
 - **Cihaz/Emülatör**: Android 10 veya üstü
 
-## 🔧 Kurulum
+### 🔧 Kurulum
 1. **Depoyu Klonlayın**
    ```bash
    git clone https://github.com/d0m1n4t3/offline-plant-identifier.git
    ```
-   Alternatif olarak, ZIP dosyasını indirip çıkarabilirsiniz.
+   Veya ZIP dosyasını indirip çıkarın.
 
 2. **Android Studio’da Açın**
    - Android Studio’yu başlatın.
    - **Dosya > Aç**’ı seçin.
-   - `OfflinePlantIdentifier` proje klasörünü seçin.
+   - `OfflinePlantIdentifier` klasörünü seçin.
 
 3. **İzinleri Kontrol Edin**
-   - `AndroidManifest.xml` dosyasında **Kamera** ve **Depolama** izinlerinin tanımlı olduğundan emin olun.
+   - `AndroidManifest.xml` içinde **Kamera** ve **Depolama** izinlerinin tanımlı olduğundan emin olun.
 
 4. **Projeyi Derleyin**
-   - Android Studio, bağımlılıkları otomatik olarak indirir ve projeyi derler.
+   - Android Studio, bağımlılıkları indirir ve projeyi otomatik olarak derler.
 
 5. **Uygulamayı Çalıştırın**
-   - Yeşil **Çalıştır ▶️** düğmesine tıklayın.
-   - Cihazınızı veya emülatörü seçin.
+   - **Çalıştır ▶️** düğmesine tıklayın.
+   - Bir cihaz veya emülatör seçin.
    - Uygulama başlatılır ve kullanıma hazır olur.
 
-## 🚀 Kullanım
-1. **Uygulamayı Başlatın**
-   - Uygulama açıldığında, fotoğraf çekme veya galeri seçimi için basit bir arayüz göreceksiniz.
+### 📸 Kullanım
+1. **Uygulamayı Açın**
+   - Uygulamayı başlatın, görüntü seçimi için sade bir arayüz görün.
 
 2. **Görüntü Seçin**
-   - **Kamera ile Çek**: Kamerayı açar.
-   - **Galeriden Seç**: Mevcut bir görüntüyü seçmenizi sağlar.
+   - **Fotoğraf Çek**: Kamerayla yeni bir görüntü yakalayın.
+   - **Galeriden Seç**: Mevcut bir görüntüyü seçin.
 
 3. **Sonuçları Görüntüleyin**
-   - Uygulama, görüntüyü çevrimdışı TensorFlow Lite modeli ile işler ve bitki adını (modelin desteklediği türlerde) gösterir.
+   - Uygulama, görüntüyü çevrimdışı işler ve destekleniyorsa bitki adını gösterir.
 
-## ℹ️ Model Bilgisi
-- Varsayılan model, sınırlı sayıda bitki türünü tanır.
-- Daha yüksek doğruluk için `plant_model.tflite` dosyasını özel bir eğitilmiş modelle değiştirebilirsiniz.
+### 🧠 Model Bilgileri
+- Varsayılan model, sınırlı bitki türlerini tanır.
+- Daha iyi doğruluk için `plant_model.tflite` dosyasını özel bir modelle değiştirin.
 
-## 📝 Notlar
-- Sorun yaşarsanız, cihazınızın veya emülatörünüzün gereksinimleri karşıladığından emin olun.
-- Daha fazla bilgi için [TensorFlow Lite dokümantasyonunu](https://www.tensorflow.org/lite) inceleyin.
+### ℹ️ Notlar
+- Cihaz/emülatörünüzün gereksinimleri karşıladığından emin olun.
+- Daha fazla bilgi için [TensorFlow Lite dokümantasyonuna](https://www.tensorflow.org/lite) bakın.
